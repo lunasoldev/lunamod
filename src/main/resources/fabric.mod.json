@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "lunamod",
+  "version": "${version}",
+  "name": "LunaMod",
+  "description": "",
+  "authors": [
+    "LunaSolDev"
+  ],
+  "contact": {
+    "repo": "https://github.com/LunaSol/LunaMod"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/lunamod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.bedcrab.lunamod.client.LunaModClient"
+    ],
+    "main": [
+      "dev.bedcrab.lunamod.LunaMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
