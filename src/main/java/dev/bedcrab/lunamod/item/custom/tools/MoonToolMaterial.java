@@ -1,10 +1,8 @@
 package dev.bedcrab.lunamod.item.custom.tools;
 
 import dev.bedcrab.lunamod.item.ModItems;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.world.World;
 
 public class MoonToolMaterial implements ToolMaterial {
     public static final int DAY_MINING_SPEED = 6;
@@ -17,7 +15,7 @@ public class MoonToolMaterial implements ToolMaterial {
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return this.miningSpeed;
+        return 6;
     }
 
     @Override
