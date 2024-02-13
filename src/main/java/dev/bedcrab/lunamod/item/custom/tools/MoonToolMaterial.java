@@ -5,9 +5,9 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 public class MoonToolMaterial implements ToolMaterial {
-    public static final int DAY_MINING_SPEED = 6;
-    public static final int NIGHT_MINING_SPEED = 12;
     public static final MoonToolMaterial MOON_TOOL_MATERIAL = new MoonToolMaterial();
+    protected static final float DAY_MINING_SPEED = 6f;
+    protected static final float NIGHT_MINING_SPEED = 12f;
     @Override
     public int getDurability() {
         return 4096;
