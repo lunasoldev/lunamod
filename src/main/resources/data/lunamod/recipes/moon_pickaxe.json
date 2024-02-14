@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    " i ",
+    " i "
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:lunamod.moon_pebble"
+    },
+    "i": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft:lunamod.moon_pickaxe",
+    "count": 1
+  }
+}

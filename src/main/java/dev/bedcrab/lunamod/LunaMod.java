@@ -3,8 +3,10 @@ package dev.bedcrab.lunamod;
 import dev.bedcrab.lunamod.block.ModBlocks;
 import dev.bedcrab.lunamod.item.ModItems;
 import dev.bedcrab.lunamod.item.custom.tools.MoonPickaxeItem;
+import dev.bedcrab.lunamod.item.custom.weapons.MoonSwordItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
@@ -22,13 +24,5 @@ public class LunaMod implements ModInitializer {
     }
 
     private void onTickStart(ServerWorld world) {
-        world.getPlayers().forEach(player -> {
-            for(ItemStack stack : player.getInventory().main) {
-                if(stack.getItem() instanceof MoonPickaxeItem) {
-                    NbtCompound tag = stack.getOrCreateNbt();
-                    tag.putBoolean("night", world.isNight());
-                }
-            }
-        });
     }
 }
