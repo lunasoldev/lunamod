@@ -1,5 +1,6 @@
 # Lunamod
-A Minecraft mod for Fabric 1.19.2 made for the wholeSMP 2.0
+A Fabric mod, that adds moon-themed items to the game, which get stronger at night.
 
-## Theme of the mod
-Lunamod is a mod which adds moon-themed items to the game.
+### Why did I create this mod:
+I started this project to get back into coding and it has helped me a lot to find motivation to code again. 
+It has also taught me a ton about using the Fabric API and Minecraft modding in general.
